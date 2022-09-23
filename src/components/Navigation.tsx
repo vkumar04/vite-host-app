@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import { AppShell, Navbar, Header, Text } from "@mantine/core";
 // @ts-ignore
 import { About } from "remoteApp/About";
+// @ts-ignore
 import { ChartsPage } from "chartApp/Charts";
 import { Home } from "../pages/Home";
 const Navigation = () => {
