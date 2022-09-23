@@ -1,14 +1,15 @@
 import { Suspense } from 'react'
-import React from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 // @ts-ignore
 import { Button } from 'remoteApp/Button'
+import Navigation from './components/Navigation'
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
       <div>
         <img src={reactLogo} alt="react logo" />
         <h1>Vite Federated Host</h1>
