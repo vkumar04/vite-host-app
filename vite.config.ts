@@ -10,6 +10,7 @@ export default defineConfig({
       name: 'host-app',
       remotes: {
         remoteApp: 'https://vite-remote-app-1-zaqt.vercel.app/assets/remoteEntry.js',
+        chartApp: 'https://vite-remote-app-2-maau.vercel.app/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),
