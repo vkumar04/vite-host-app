@@ -12,6 +12,9 @@ export default defineConfig({
       exposes: {
         './Button': './src/components/Button.tsx',
       },
+      remotes: {
+        'remote-app': 'https://vite-remote-host-app-1-cobx.vercel.app/assets/remoteEntry.js',
+      },
       shared: ['react', 'react-dom'],
     }),
   ]
