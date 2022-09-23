@@ -1,10 +1,5 @@
-interface IProps {
-    name: string;
-    onClick: () => void;
-}
-
-export const Button = (props: IProps) => {
+export const Button = (name: any) => {
     return (
-        <button onClick={props.onClick}>{props.name}</button>
+        <button>{name}</button>
     );
 }
