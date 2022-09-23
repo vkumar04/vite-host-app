@@ -17,5 +17,8 @@ export default defineConfig({
       },
       shared: ['react', 'react-dom'],
     }),
-  ]
+  ],
+  build: {
+    target: ["chrome89", "edge89", "firefox89", "safari15"]
+ }
 })
