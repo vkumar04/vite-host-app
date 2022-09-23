@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 // @ts-ignore
-import { Page } from 'remoteApp/Page'
+const Page = React.lazy(() => import('remoteApp/Page'))
 
 function App() {
   return (
