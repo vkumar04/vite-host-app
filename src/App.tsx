@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 // @ts-ignore
-const Page = React.lazy(() => import('remoteApp/Page'))
+import { Button } from 'remoteApp/Button'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <img src={reactLogo} alt="react logo" />
         <h1>Vite Federated Host</h1>
         <Suspense fallback="Loading Page">
-          <Page />
+          <Button name="Button from Remote" />
         </Suspense>
         </div>
     </div>

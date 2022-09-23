@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: 'host-app',
       remotes: {
-        remoteApp: 'https://vite-remote-host-app-1-cobx-fixbte7gb-vk-communitylab.vercel.app/assets/remoteEntry.js',
+        remoteApp: 'https://vite-remote-app-1-zaqt.vercel.app/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),
