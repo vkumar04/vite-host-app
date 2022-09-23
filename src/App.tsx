@@ -1,9 +1,10 @@
+import { Suspense } from 'react'
 import React from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import {Button} from './components/Button'
 
-// const Page = React.lazy(() => import('remote-app/Page'))
+// @ts-ignore
+import { Page } from 'remoteApp/Page'
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <div>
         <img src={reactLogo} alt="react logo" />
         <h1>Vite Federated Host</h1>
-        <Button name="Hello World" />
-        {/* <Page /> */}
+        <Suspense fallback="Loading Page">
+          <Page />
+        </Suspense>
         </div>
     </div>
   )

@@ -8,12 +8,8 @@ export default defineConfig({
     react(),
     federation({
       name: 'host-app',
-      filename: 'remoteEntry.js',
-      exposes: {
-        './Button': './src/components/Button.tsx',
-      },
       remotes: {
-        'remote-app': 'https://vite-remote-host-app-1-cobx.vercel.app/assets/remoteEntry.js',
+        remoteApp: 'https://vite-remote-host-app-1-cobx-fixbte7gb-vk-communitylab.vercel.app/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),
