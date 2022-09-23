@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import {Button} from './components/Button'
 
-const Page = React.lazy(() => import('remote-app/Page'))
+// const Page = React.lazy(() => import('remote-app/Page'))
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <img src={reactLogo} alt="react logo" />
         <h1>Vite Federated Host</h1>
         <Button name="Hello World" />
-        <Page />
+        {/* <Page /> */}
         </div>
     </div>
   )
