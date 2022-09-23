@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import Root from './routes/root'
+import Navigation from './components/Navigation'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import App from './App'
 import './index.css'
-
+// @ts-ignore
 import { About } from 'remoteApp/About'
 
 const router = createBrowserRouter([
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Root />
+    <Navigation />
     <Suspense fallback="loading...">
     <RouterProvider router={router} />
     </Suspense>
