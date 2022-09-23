@@ -8,7 +8,7 @@ function App() {
       <div>
         <img src={reactLogo} alt="react logo" />
         <h1>Vite Federated Host</h1>
-        <Button name=/>
+        <Button name="Hello World" />
         </div>
     </div>
   )
